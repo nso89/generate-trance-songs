@@ -1,5 +1,5 @@
 # generate-trance-songs
-Generate a random trance playlist from `trance\main.txt`.
+Generate a random trance playlist from `main.txt`.
 
 * [Prerequisites](#prerequisites)
 * [Setup](#setup)
