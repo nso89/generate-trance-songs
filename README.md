@@ -16,11 +16,11 @@ C:\Users\nso89\Notes\trance\main.txt
 ```
 
 #### <a name="setup"></a>Setup
-1. Under your `USERPROFILE`, extract the `trancetools-main.zip`
+1. Under your `USERPROFILE`, extract the `generate-trance-songs-main.zip`
 
 **Example**:
 ```cmd
-C:\Users\nso89\trancetools-main\generate-trance-songs
+C:\Users\nso89\generate-trance-songs-main
 ```
 
 #### <a name="running-the-script"></a>Running the Script
@@ -28,14 +28,14 @@ C:\Users\nso89\trancetools-main\generate-trance-songs
 
 **Example**:
 ```cmd
-C:\Users\nso89>cd trancetools-main\generate-trance-songs
+C:\Users\nso89>cd generate-trance-songs
 ```
 
 2. Start the `main.py` script.
 
 **Example**:
 ```cmd
-C:\Users\nso89\trancetools-main\generate-trance-songs>python main.py
+C:\Users\nso89\generate-trance-songs>python main.py
 ```
 
 3. The output is displayed in the `cmd.exe`:
@@ -52,7 +52,7 @@ Raz Nitzan ft. Jodie Knight - Eternally
 ```
 Write to file (y/n): y
 
-File Name: c:\Users\nso89\trancetools\generate-trance-songs\20230117-153150.txt 
+File Name: c:\Users\nso89\generate-trance-songs\20230117-153150.txt 
 
 Enjoy!
 ```
