@@ -24,18 +24,18 @@ C:\Users\nso89\generate-trance-songs-main
 ```
 
 #### <a name="running-the-script"></a>Running the Script
-1. Open `cmd.exe` and change the directory to the `generate-trance-songs` folder.
+1. Open `cmd.exe` and change the directory to the `generate-trance-songs-main` folder.
 
 **Example**:
 ```cmd
-C:\Users\nso89>cd generate-trance-songs
+C:\Users\nso89>cd generate-trance-songs-main
 ```
 
 2. Start the `main.py` script.
 
 **Example**:
 ```cmd
-C:\Users\nso89\generate-trance-songs>python main.py
+C:\Users\nso89\generate-trance-songs-main>python main.py
 ```
 
 3. The output is displayed in the `cmd.exe`:
@@ -47,12 +47,12 @@ Phynn ft. Jets Overhead - In Your Heart (Original Edit)
 Raz Nitzan ft. Jodie Knight - Eternally
 ```
 
-4. If you want to write the songs to a `.txt` file, type `y`. It will be written to `YYYYMMDD-HHMMSS.txt` under `generate-trance-songs`.
+4. If you want to write the songs to a `.txt` file, type `y`. It will be written to `YYYYMMDD-HHMMSS.txt` under `generate-trance-songs-main`.
 
 ```
 Write to file (y/n): y
 
-File Name: c:\Users\nso89\generate-trance-songs\20230117-153150.txt 
+File Name: c:\Users\nso89\generate-trance-songs-main\20230117-153150.txt 
 
 Enjoy!
 ```
