@@ -21,7 +21,7 @@ def get_track_list_from(file: Path, search_for: List[int]) -> List[str]:
     Open a file, and using a list of line numbers, yield 
     the matching line.
     """
-    tracks : List[str] = []
+    tracks : List[str]
     with open(file) as f_obj:
        tracks = [line.strip() for number, line in enumerate(f_obj, start = 0) if number in search_for]
     return tracks
