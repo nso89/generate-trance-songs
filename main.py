@@ -18,8 +18,7 @@ def get_line_count_from(file: Path) -> int:
 
 def get_track_list_from(file: Path, search_for: List[int]) -> List[str]:
     """
-    Open a file, and using a list of line numbers, yield 
-    the matching line.
+    Open a file, and using a list of line numbers, append the matching line.
     """
     tracks : List[str]
     with open(file) as f_obj:
@@ -47,12 +46,11 @@ def main():
 
     lines : int  = get_line_count_from(file = MAIN_TXT)
     numbers : List[int] = sorted([randrange(lines) for _ in range(LIMIT)])
-    today_trance : List[str] = []
+    today_trance = get_track_list_from(file = MAIN_TXT, search_for = numbers)
 
     print("\n")
-    for track in get_track_list_from(file = MAIN_TXT, search_for = numbers):
+    for track in today_trance:
         print(track)
-        today_trance.append(track)
     
     write_to_file = input("\nWrite to file (y/n): ").strip().lower()
 
