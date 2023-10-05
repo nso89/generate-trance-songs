@@ -18,12 +18,15 @@ def get_line_count_from(file: Path) -> int:
 
 def get_track_list_from(file: Path, search_for: List[int]) -> List[str]:
     """
-    Open a file, and using a list of line numbers, append the matching line.
+    Open a file, and using a list of line numbers, append the 
+    matching line.
     """
-    tracks : List[str]
+    temp : List[str]
     with open(file) as f_obj:
-       tracks = [line.strip() for number, line in enumerate(f_obj, start = 0) if number in search_for]
-    return tracks
+       temp = [line.strip() 
+               for number, line in enumerate(f_obj, start = 0) 
+               if number in search_for]
+    return temp
 
 
 def write_a_list_to_a_file(file_name: Path, items: List[str]):
