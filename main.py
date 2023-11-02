@@ -62,7 +62,7 @@ def main():
     if write_to_file == "y":
         file_name = Path(__file__).parent.joinpath(get_date()).with_suffix(".txt")
         write_a_list_to_a_file(file_name = file_name, items = today_trance)
-        print(f"File Name: {file_name} ")
+        print(f"File Name: {file_name}")
 
     print("\nEnjoy!")
 
