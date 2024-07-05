@@ -1,6 +1,6 @@
 from random import randrange
 from pathlib import Path
-from typing import List
+from typing import Set
 from datetime import datetime
 
 
@@ -16,7 +16,7 @@ def get_line_count_from(file: Path) -> int:
     return count
 
 
-def get_track_list_from(file: Path, search_for: List[int]) -> List[str]:
+def get_track_list_from(file: Path, search_for: Set[int]) -> List[str]:
     """
     Open a file, and using a list of line numbers, append the 
     matching line.
@@ -48,8 +48,8 @@ def get_date() -> datetime:
 def main():
 
     lines : int  = get_line_count_from(file = MAIN_TXT)
-    numbers : List[int] = sorted([randrange(lines) for _ in range(LIMIT)])
-    today_trance = get_track_list_from(file = MAIN_TXT, search_for = numbers)
+    numbers : Set[int] = {randrange(lines) for _ in range(LIMIT)}
+    today_trance = sorted(get_track_list_from(file = MAIN_TXT, search_for = numbers))
 
     print("\n")
     for track in today_trance:
