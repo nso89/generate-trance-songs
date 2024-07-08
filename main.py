@@ -1,6 +1,6 @@
 from random import randrange
 from pathlib import Path
-from typing import Set
+from typing import List, Set
 from datetime import datetime
 
 
@@ -49,7 +49,7 @@ def main():
 
     lines : int  = get_line_count_from(file = MAIN_TXT)
     numbers : Set[int] = {randrange(lines) for _ in range(LIMIT)}
-    today_trance = sorted(get_track_list_from(file = MAIN_TXT, search_for = numbers))
+    today_trance : List[str] = sorted(get_track_list_from(file = MAIN_TXT, search_for = numbers))
 
     print("\n")
     for track in today_trance:
